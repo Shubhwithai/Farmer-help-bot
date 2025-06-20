@@ -10,11 +10,23 @@ load_dotenv()
 default_api_key = os.getenv("SUTRA_API_KEY")
 
 # Page configuration
-st.set_page_config(
-    page_title="Krishi Mitra (कृषि मित्र) - Farmer Assistant",
-    page_icon="🌾",
-    layout="wide"
+# st.set_page_config(
+#     page_title="Krishi Mitra (कृषि मित्र) - Farmer Assistant",
+#     page_icon="🌾",
+#     layout="wide"
+# )
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <h1 style="color: #4CAF50; font-size: 2.5em;">
+            <img src="https://framerusercontent.com/images/9vH8BcjXKRcC5OrSfkohhSyDgX0.png" width="60" style="vertical-align: middle; margin-right: 10px;" />
+            Krishi Mitra (कृषि मित्र) 🌾🧑‍🌾
+        </h1>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
+
 
 # Supported languages with native scripts
 languages = [
