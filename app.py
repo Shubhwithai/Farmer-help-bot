@@ -11,7 +11,7 @@ default_api_key = os.getenv("SUTRA_API_KEY")
 
 #Page configuration
 st.set_page_config(
-    page_title="Krishi Mitra (कृषि मित्र) - Farmer Assistant",
+    page_title="Krushi Mitra (कृषि मित्र) - Farmer Assistant",
     page_icon="🌾",
     layout="wide"
 )
