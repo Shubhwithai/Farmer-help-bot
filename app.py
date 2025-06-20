@@ -13,7 +13,7 @@ default_api_key = os.getenv("SUTRA_API_KEY")
 st.set_page_config(
     page_title="Krishi Mitra (कृषि मित्र) - Farmer Assistant",
     page_icon="🌾",
-    layout="center"
+    layout="wide"
 )
 
 # Supported languages with native scripts
