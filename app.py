@@ -87,6 +87,25 @@ st.sidebar.image(
 
 with st.sidebar:
     st.title("🌾 Krishi Mitra (कृषि मित्र)")
+
+    
+    # API Key Input
+    st.markdown("### 🔑 API Key")
+    api_input = st.text_input(
+        "Enter your SUTRA API Key:",
+        value=default_api_key or "",
+        type="password",
+        help="Paste your SUTRA API key here. You can get one from the link below."
+    )
+    api_key = api_input or default_api_key
+
+    st.markdown(
+        "<small>🔗 <a href='https://www.two.ai/sutra/api' target='_blank'>Get your free SUTRA API key here</a></small>",
+        unsafe_allow_html=True
+    )
+
+    st.divider()
+
     
     selected_language = st.selectbox("Select language / भाषा चुनें:", languages)
     selected_language_simple = selected_language.split(" ")[0]
@@ -108,23 +127,6 @@ with st.sidebar:
         include_scientific_info = st.checkbox(
             "Include scientific information / वैज्ञानिक जानकारी शामिल करें", value=True
         )
-
-    st.divider()
-
-    # API Key Input
-    st.markdown("### 🔑 API Key")
-    api_input = st.text_input(
-        "Enter your SUTRA API Key:",
-        value=default_api_key or "",
-        type="password",
-        help="Paste your SUTRA API key here. You can get one from the link below."
-    )
-    api_key = api_input or default_api_key
-
-    st.markdown(
-        "<small>🔗 <a href='https://www.two.ai/sutra/api' target='_blank'>Get your free SUTRA API key here</a></small>",
-        unsafe_allow_html=True
-    )
 
     st.divider()
 
