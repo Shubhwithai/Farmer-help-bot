@@ -87,7 +87,6 @@ st.sidebar.image(
 
 with st.sidebar:
     st.title("🌾 Krishi Mitra (कृषि मित्र)")
-
     
     # API Key Input
     st.markdown("### 🔑 API Key")
