@@ -141,9 +141,23 @@ with st.sidebar:
 
 # Header
 st.markdown(
-    f'<h1 style="color: #4CAF50;"><img src="https://framerusercontent.com/images/9vH8BcjXKRcC5OrSfkohhSyDgX0.png" width="50"/> Krishi Mitra (कृषि मित्र)🌾🧑‍🌾</h1>',
+    """
+    <div style="text-align: center;">
+        <h1 style="color: #4CAF50; font-size: 2.5em;">
+            <img src="https://framerusercontent.com/images/9vH8BcjXKRcC5OrSfkohhSyDgX0.png" width="60" style="vertical-align: middle; margin-right: 10px;" />
+            Krishi Mitra (कृषि मित्र) 🌾🧑‍🌾
+        </h1>
+    </div>
+    """,
     unsafe_allow_html=True
 )
+# st.markdown(
+#     f'<h1 style="color: #4CAF50;"><img src="https://framerusercontent.com/images/9vH8BcjXKRcC5OrSfkohhSyDgX0.png" width="50"/> Krishi Mitra (कृषि मित्र)🌾🧑‍🌾</h1>',
+#     unsafe_allow_html=True
+# )
+
+
+
 
 # Initialize session state
 if "messages" not in st.session_state:
