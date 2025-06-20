@@ -16,7 +16,7 @@ default_api_key = os.getenv("SUTRA_API_KEY")
 #     layout="wide"
 # )
 st.markdown(
-    f'<h1 style="color: #4CAF50;"><img src="https://framerusercontent.com/images/9vH8BcjXKRcC5OrSfkohhSyDgX0.png" width="50"/> Krishi Mitra (कृषि मित्र)🌾🧑‍🌾</h1>',
+    f'<h1 style="color: #4CAF50;"><img src="https://framerusercontent.com/images/9vH8BcjXKRcC5OrSfkohhSyDgX0.png" width="50"/></h1>',
     unsafe_allow_html=True
 )
 
