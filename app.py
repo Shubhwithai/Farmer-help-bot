@@ -103,9 +103,8 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    st.divider()
-
-    
+    # st.divider()
+ 
     selected_language = st.selectbox("Select language / भाषा चुनें:", languages)
     selected_language_simple = selected_language.split(" ")[0]
     
